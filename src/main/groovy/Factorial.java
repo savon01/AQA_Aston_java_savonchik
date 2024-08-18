@@ -1,13 +1,10 @@
 public class Factorial {
 
-    public static int factorial(double n) {
+    public static int factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Число должно быть положительным");
         }
-        if (n != (int) n) {
-            throw new IllegalArgumentException("Необходимо ввести целое число");
-        }
-        if (n == 0) {
+        if (n == 0 || n ==1) {
             return 1;
         }
         int result = 1;
