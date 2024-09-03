@@ -1,6 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.DisplayName;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +10,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.List;
 
 import static org.testng.Assert.*;
 
@@ -49,65 +48,23 @@ public class CheckOnlineReplenishmentTest {
         }
     }
 
+    @Step("Онлайн пополнение")
     @Test
-    @DisplayName("Проверка заголовка")
     public void testCheckTitleName() {
         String title = replenishmentPage.checkTitleName();
         assertEquals("Онлайн пополнение без комиссии", title);
     }
 
+    @Step("Проверка логотипов")
     @Test
-    @DisplayName("Проверка наличия логотипов платёжных систем")
     public void testAreaLogoDisplay() {
         boolean logoDisplayed = replenishmentPage.areaLogoDisplay();
         assertTrue(logoDisplayed);
     }
 
 
+    @Step("Работа ссылки")
     @Test
-    @DisplayName("Плейсхолдеры услуги связи")
-    public void testGetInputPlaceholdersService() {
-        List<String> placeholders = replenishmentPage.getInputPlaceholders(
-                "//p[text()='Услуги связи']");
-        assertEquals("Номер телефона", placeholders.get(0));
-        assertEquals("Сумма", placeholders.get(1));
-        assertEquals("E-mail для отправки чека", placeholders.get(2));
-    }
-
-    @Test
-    @DisplayName("Плейсхолдеры домашний интернет")
-    public void testGetInputPlaceholdersHomeInternet() {
-
-        List<String> placeholders = replenishmentPage.getInputPlaceholders(
-                "//p[text()='Домашний интернет']");
-        assertEquals("Номер абонента", placeholders.get(0));
-        assertEquals("Сумма", placeholders.get(1));
-        assertEquals("E-mail для отправки чека", placeholders.get(2));
-    }
-
-    @Test
-    @DisplayName("Плейсхолдеры рассрочка")
-    public void testGetInputPlaceholdersCredit() {
-        List<String> placeholders = replenishmentPage.getInputPlaceholders(
-                "//p[text()='Рассрочка']");
-        assertEquals("Номер счета на 44", placeholders.get(0));
-        assertEquals("Сумма", placeholders.get(1));
-        assertEquals("E-mail для отправки чека", placeholders.get(2));
-    }
-
-    @Test
-    @DisplayName("Плейсхолдеры задолженность")
-    public void testGetInputPlaceholdersDebt() {
-        List<String> placeholders = replenishmentPage.getInputPlaceholders(
-                "//p[text()='Задолженность']");
-        assertEquals("Номер счета на 2073", placeholders.get(0));
-        assertEquals("Сумма", placeholders.get(1));
-        assertEquals("E-mail для отправки чека", placeholders.get(2));
-    }
-
-
-    @Test
-    @DisplayName("Подробнее о сервисе")
     public void testClickServiceLink() {
         replenishmentPage.clickServiceLink();
         Assert.assertEquals(driver.getCurrentUrl(),
@@ -116,9 +73,8 @@ public class CheckOnlineReplenishmentTest {
         driver.navigate().back();
     }
 
-
+    @Step("Кликабельность кнопки")
     @Test
-    @DisplayName("Проверка кнопки продолжить после заполнения")
     public void testFillServiceDetailsNext() {
 
         try {
@@ -133,8 +89,8 @@ public class CheckOnlineReplenishmentTest {
         }
     }
 
+    @Step("Поиск элементов во фрейме")
     @Test
-    @DisplayName("Проверка фрейма после заполнения формы")
     public void testFillServiceDetailsFrame() {
         try {
             replenishmentPage.fillServiceDetailsNext(driver, getData.phone, getData.amount, getData.email);

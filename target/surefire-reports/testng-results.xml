@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-03T13:00:20 MSK" name="Surefire suite" finished-at="2024-09-03T13:00:45 MSK" duration-ms="25606">
+    <groups>
+    </groups>
+    <test started-at="2024-09-03T13:00:20 MSK" name="Surefire test" finished-at="2024-09-03T13:00:45 MSK" duration-ms="25606">
+      <class name="org.example.CheckOnlineReplenishmentTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:20 MSK" name="setUp" finished-at="2024-09-03T13:00:28 MSK" duration-ms="8194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAreaLogoDisplay()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:28 MSK" name="testAreaLogoDisplay" finished-at="2024-09-03T13:00:28 MSK" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAreaLogoDisplay -->
+        <test-method signature="testCheckTitleName()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:28 MSK" name="testCheckTitleName" finished-at="2024-09-03T13:00:29 MSK" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckTitleName -->
+        <test-method signature="testClickServiceLink()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:29 MSK" name="testClickServiceLink" finished-at="2024-09-03T13:00:31 MSK" duration-ms="2789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickServiceLink -->
+        <test-method signature="testFillServiceDetailsFrame()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:31 MSK" name="testFillServiceDetailsFrame" finished-at="2024-09-03T13:00:36 MSK" duration-ms="4223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFillServiceDetailsFrame -->
+        <test-method signature="testFillServiceDetailsNext()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:36 MSK" name="testFillServiceDetailsNext" finished-at="2024-09-03T13:00:36 MSK" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFillServiceDetailsNext -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.CheckOnlineReplenishmentTest@42210be1]" started-at="2024-09-03T13:00:36 MSK" name="tearDown" finished-at="2024-09-03T13:00:36 MSK" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.CheckOnlineReplenishmentTest -->
+      <class name="org.example.CheckPlaceholdersTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.CheckPlaceholdersTest@7159a5cd]" started-at="2024-09-03T13:00:36 MSK" name="setUp" finished-at="2024-09-03T13:00:42 MSK" duration-ms="6108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetInputPlaceholdersCredit()[pri:0, instance:org.example.CheckPlaceholdersTest@7159a5cd]" started-at="2024-09-03T13:00:42 MSK" name="testGetInputPlaceholdersCredit" finished-at="2024-09-03T13:00:43 MSK" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetInputPlaceholdersCredit -->
+        <test-method signature="testGetInputPlaceholdersDebt()[pri:0, instance:org.example.CheckPlaceholdersTest@7159a5cd]" started-at="2024-09-03T13:00:43 MSK" name="testGetInputPlaceholdersDebt" finished-at="2024-09-03T13:00:43 MSK" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetInputPlaceholdersDebt -->
+        <test-method signature="testGetInputPlaceholdersHomeInternet()[pri:0, instance:org.example.CheckPlaceholdersTest@7159a5cd]" started-at="2024-09-03T13:00:43 MSK" name="testGetInputPlaceholdersHomeInternet" finished-at="2024-09-03T13:00:44 MSK" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetInputPlaceholdersHomeInternet -->
+        <test-method signature="testGetInputPlaceholdersService()[pri:0, instance:org.example.CheckPlaceholdersTest@7159a5cd]" started-at="2024-09-03T13:00:44 MSK" name="testGetInputPlaceholdersService" finished-at="2024-09-03T13:00:45 MSK" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetInputPlaceholdersService -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.CheckPlaceholdersTest@7159a5cd]" started-at="2024-09-03T13:00:45 MSK" name="tearDown" finished-at="2024-09-03T13:00:45 MSK" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.CheckPlaceholdersTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
